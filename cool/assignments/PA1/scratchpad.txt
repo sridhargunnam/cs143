@@ -1,0 +1,13 @@
+/* Begin of User functions */
+enum TokenType {OBJECTID, TYPEID};
+std::unordered_map<TokenType, std::string> tokenMap {
+    {OBJECTID, "OBJECTID"} ,
+    {TYPEID, "TYPEID"}
+    };
+
+std::string fillLine(int line_no, std::string type_, std::string identifier) {
+        std::string result;
+        result = "#" + std::to_string(line_no) + " " + type_ + " " + identifier + "\n";
+        return result;
+}
+/* End of User functions */
