@@ -1,12 +1,8 @@
 /* Begin of User functions */
 enum TokenType {OBJECTID, TYPEID};
-std::unordered_map<TokenType, std::string> tokenMap {
-        {OBJECTID, "OBJECTID"} ,
-        {TYPEID, "TYPEID"}
-};
 
 void fillLine(int line_no,
-                     std::string type_,
+                     std::string type_
                      ) {
     std::string result;
     result = "#" +

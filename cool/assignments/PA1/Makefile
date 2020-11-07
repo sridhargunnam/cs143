@@ -34,7 +34,7 @@ test:	compile
 	${CLASSDIR}/bin/spim -file input.s < input.test
 
 clean :
-	rm -f *.s core *~ mylexer *.o
+	rm -f *.s  *~ mylexer *.o
 	echo "" > my_outs/
 
 # Custom targets added for PA1
