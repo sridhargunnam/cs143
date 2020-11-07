@@ -34,8 +34,7 @@ test:	compile
 	${CLASSDIR}/bin/spim -file input.s < input.test
 
 clean :
-	rm -f *.s  *~ mylexer *.o
-	echo "" > my_outs/
+	rm -f *.s *.o mylexer lex.yy.c
 
 # Custom targets added for PA1
 lex.yy.c: cool.flex
