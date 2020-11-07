@@ -12,27 +12,12 @@ class Main inherits IO {
 };
 
 (*
-(*
-* Basic Class 1 - inherits
+Tests for the Lexer:
+1. Correct line numbers
+2. Ignoring comments
+3. Error reporting on bad comments
+4. Unterminated literal string error
+5. Literal string too long error
 *)
-class Main1 inherits IO {
-};
 
-(*
-* Basic Class 3 - with methods
-*)
-class Main3 inherits IO {
-   main() : Object {
-      out_string("Nothing implemented\n")
-   };
-};
 
-(*
-* Basic Class 4 - with methods and some expression
-*)
-class Main4 inherits IO {
-   main2() : Object {
-      out_string("Nothing implemented\n")
-   };
-};
-*)

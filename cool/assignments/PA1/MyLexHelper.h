@@ -1,14 +1,14 @@
 /* Begin of User functions */
 enum TokenType {OBJECTID, TYPEID};
 
-void fillLine(int line_no,
-                     std::string type_
+void fillLineKeywords(int line_no,
+                     std::string identifier
                      ) {
     std::string result;
     result = "#" +
             std::to_string(line_no) +
             " " +
-            type_ +
+            identifier +
             "\n";
     std::cout <<  result;
 }

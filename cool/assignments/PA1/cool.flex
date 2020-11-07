@@ -4,8 +4,7 @@
 #include <cstdio>
 #include <cmath>
 int num_lines = 0, num_chars = 0;
-extern void fillLine(int line_no, std::string type, std::string identifier);
-extern void fillLine(int line_no, std::string identifier);
+extern void fillLineKeywords(int line_no, std::string identifier);
 
 %}
 
@@ -32,7 +31,7 @@ KEYWORD        (class)
 }
 
 {KEYWORD} {
-    fillLine(yylineno, yytext);
+    fillLineKeywords(yylineno, yytext);
 }
 
 {TYPEID}   {

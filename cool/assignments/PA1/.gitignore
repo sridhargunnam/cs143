@@ -1,7 +1,7 @@
 *.o
 *.s
 my_outs/*
-my_refs/*
+ref_outs/*
 input.s
 lex.yy.c
 mylex
