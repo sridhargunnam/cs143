@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include "MyLexHelper.h"
 
-extern void yylex();
+extern int yylex();
 extern FILE *yyin;
 extern void MyLexer();
 
